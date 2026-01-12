@@ -35,7 +35,7 @@ export default async function handler(req, res) {
   const { text, lang, translation } = parseFormBody(req);
 
   // Stuur alles naar Apps Script
-  await fetch("https://script.google.com/macros/s/AKfycbwiwLAf07rIVLd7MQN-zg5mNj8xQ7cQtsq8z8r8fo90yrPVPWByuC2F6OB43ebu5ovv/exec", {
+  await fetch("https://script.google.com/macros/s/AKfycbxYjd0dAmTMCDl7XRump_vdj6zONXcKla3IHkU4cm7kAaBhQunZxy88nvPCPEEebEhd/exec", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body:
